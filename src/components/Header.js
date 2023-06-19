@@ -13,7 +13,7 @@ const Header = () => {
       <div className='header-right-container'>
         <img src={respicture} alt='Picture of server carrying a dish.' className='header-restaurant-picture'/>
       </div>
-      
+
     </header>
   )
 }

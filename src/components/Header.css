@@ -5,7 +5,7 @@ header {
     display:flex;
     gap:10px;
     margin: 2rem;
-    height: 250px;
+    height: 280px;
     
 }
 
@@ -13,6 +13,7 @@ header {
 .header-restaurant-picture {
     padding:20px;
     width: 300px;
+    height :320px;
     border-radius: 30px;
 
 }
@@ -43,12 +44,13 @@ h2{
 
 .header-reserve-button {
 background: #f4ce14;
-margin:10px 0;
+margin-top: 10px;
 padding: 10px 30px;
 border-radius: 10px;
 font-weight: 600;
 font-size: 16px;
 border-style: none;
+
 }
 
 
@@ -58,7 +60,7 @@ border-style: none;
         display: none;
     }
 
-    .header-left-container  {
-        height: 400px;
+    header {
+        height: 300px;
     }
 }
