@@ -1,0 +1,26 @@
+
+.specials-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.specials-h2 {
+    font-size: 3rem;
+    color: #333333;
+}
+
+.specials-button {
+    background-color: #f4ce14;
+    font-size: 16pt;
+    font-weight:700;
+    padding: 10px 45px;
+    border-radius: 15px;
+    border: none;
+    transition: .2s ease-in;
+}
+.specials-button:hover {
+    background-color: #333333;
+    color: #f4ce14
+}
