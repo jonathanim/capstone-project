@@ -1,9 +1,20 @@
 import React from 'react'
 
-const SpecialsCard = () => {
+const SpecialsCard = (img, title, description) => {
   return (
-    <div>
-      
+    <div className='card'>
+        <div>
+            {/* imgage */}
+        </div>
+        <div>
+            {/* {title} */}
+        </div>
+        <div>
+            {/* description */}
+        </div>
+        <div>
+            {/* button to order */}
+        </div>
     </div>
   )
 }

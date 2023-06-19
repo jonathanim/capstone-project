@@ -24,3 +24,7 @@
     background-color: #333333;
     color: #f4ce14
 }
+
+.special-card-container {
+    display: flex;
+}
