@@ -1,19 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import './SpecialsCard.css'
+const SpecialsCard = (props) => {
+    const image = props.data.img
+    const price = props.data.price
+    const title = props.data.title
+    const description =props.data.description
+ 
+    
 
-const SpecialsCard = (img, title, description) => {
+    useEffect(()=>{
+        console.log(image)
+    })
   return (
-    <div className='card'>
-        <div>
-            {/* imgage */}
+    <div className='specialCard-card'>
+        <div className='image-container'>
+            <img src={image} alt={title} height="100%"/>
         </div>
         <div>
-            {/* {title} */}
+            <h2>{title}</h2> <h3>{price}</h3>
         </div>
         <div>
-            {/* description */}
+            <p>
+                {description}
+            </p>
         </div>
         <div>
             {/* button to order */}
+            < button>Order for delivery</button>
         </div>
     </div>
   )
