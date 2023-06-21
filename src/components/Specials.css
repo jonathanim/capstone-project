@@ -27,9 +27,12 @@
     color: #f4ce14
 }
 
+
 .special-card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 35px;
-    margin-top: 20px;
+    display: flex;
+    width: 85vw;
+    justify-content:space-between;
+    margin: auto;
+    overflow: hidden;
+    
 }

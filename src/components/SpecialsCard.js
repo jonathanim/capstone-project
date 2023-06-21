@@ -1,34 +1,31 @@
 import React, { useEffect } from 'react'
 import './SpecialsCard.css'
 const SpecialsCard = (props) => {
-    const image = props.data.img
-    const price = props.data.price
-    const title = props.data.title
-    const description =props.data.description
- 
-    
+    const {img,price,title, description} = props.data
+
 
     useEffect(()=>{
-        console.log(image)
+        console.log(img)
     })
   return (
-    <div className='specialCard-card'>
-        <div className='image-container'>
-            <img src={image} alt={title} height="100%"/>
+        <div className='card'>
+            <div className='image-container'>
+                <img src={img} alt={title}/>
+            </div>
+            <div className='card-title'>
+                <h3>{title}</h3>
+                <h3 className='card-price'>{price}</h3>
+            </div>
+            <div className='card-text'>
+                <p>
+                    {description}
+                </p>
+            </div>
+            <div>
+                < button>Order for delivery</button>
+            </div>
         </div>
-        <div>
-            <h2>{title}</h2> <h3>{price}</h3>
-        </div>
-        <div>
-            <p>
-                {description}
-            </p>
-        </div>
-        <div>
-            {/* button to order */}
-            < button>Order for delivery</button>
-        </div>
-    </div>
+
   )
 }
 
