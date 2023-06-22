@@ -43,6 +43,33 @@ h3.card-price {
     font-family: 'Karla', sans-serif;
 }
 
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-button button {
+    color: #333;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 3px 5px black;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.card-button button:hover {
+    color: white;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border-bottom: 1px solid white;
+    box-shadow: 3px 5px black;
+}
+
 @media screen and (max-width: 1040px) {
     .card {
         grid-template-columns: 47% 47%;

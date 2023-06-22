@@ -21,8 +21,8 @@ const SpecialsCard = (props) => {
                     {description}
                 </p>
             </div>
-            <div>
-                < button>Order for delivery</button>
+            <div className='card-button'>
+                <button>Order for delivery</button>
             </div>
         </div>
 
