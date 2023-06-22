@@ -4,20 +4,19 @@
     flex-direction: column;
     background-color: #edefee;
     font-family: 'Karla', sans-serif;
-    max-width: 300px;
+    border-radius: 20px 20px 0 0;
+
 }
 
 .image-container {
-    width: fit-content;
-    height: 300px;
     overflow: hidden;
-    display: flex;
     align-items: center;
     border-radius: 20px 20px 0 0;
 }
 
 .image-container img {
     width: 100%;
+    height: auto;
 }
 
 .card-title {

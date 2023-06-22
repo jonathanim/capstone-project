@@ -3,8 +3,9 @@
 header {
     background-color: #495e57;
     display:flex;
+    justify-content: space-around;
     gap:10px;
-    margin: 2rem;
+    margin: 0 2rem;
     height: 280px;
     
 }
@@ -18,15 +19,16 @@ header {
 
 }
 
-h1 {
+
+.header-left h1 {
     color: #f4ce14;
     font-weight: 600;
 }
-h2{
+.header-left h2{
     color:#edefee;
 }
 
- p {
+ .header-left p {
     color:#edefee;
     font-weight: 500;
 }
@@ -34,7 +36,7 @@ h2{
 .header-left-container {
     padding: 20px;
     width: 300px;
-    margin-left: 25%;
+
    
 }
 
@@ -64,8 +66,19 @@ transition: .2s ease-in;
     .header-restaurant-picture {
         display: none;
     }
-
+    .header-left p {
+        width: 100%;
+        font-size: smaller
+    }
+    .header-right-container{
+        display: none;
+    }
     header {
-        height: 300px;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .header-left {
+
     }
 }

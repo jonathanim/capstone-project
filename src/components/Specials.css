@@ -30,9 +30,8 @@
 
 .special-card-container {
     display: flex;
-    width: 85vw;
-    justify-content:space-between;
-    margin: auto;
-    overflow: hidden;
+    justify-content:space-evenly;
+    gap:2rem;
+    margin: 2rem;
     
 }
