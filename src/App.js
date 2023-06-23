@@ -1,19 +1,22 @@
 import React from 'react';
+import Home from './routes/Home';
+import Reservation from './components/Reservation';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
-import Nav from './components/Nav';
+
+import {Route, Routes} from "react-router-dom";
 
 import './App.css';
+import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className='App-container'> 
+    <div className='App-container'>
       <Nav/>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/reservation' element={<Reservation/>}/>
+      </Routes>
+    
     </div>
   );
 }
