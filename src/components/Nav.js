@@ -9,11 +9,11 @@ const Nav = () => {
 
   const links = [
     {name:"Home", path: "/"},
-    {name:"About", path: "/"},
-    {name:"Menu", path: "/"},
+    {name:"About", path: "/about"},
+    {name:"Menu", path: "/menu"},
     {name:"Reservation", path: "/reservation"},
-    {name:"Order Online", path: "/"},
-    {name:"Login", path: "/"},
+    {name:"Order Online", path: "/order"},
+    {name:"Login", path: "/login"},
   ]
 
 

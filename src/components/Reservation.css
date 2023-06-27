@@ -1,0 +1,54 @@
+
+
+.reservation-wrapper {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.73)), url("./assets/restaurant-seats.jpg");
+    background-size: cover;
+    margin:0 2rem;
+}
+
+.reservation-container {
+    display: flex;
+    margin: 2rem;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 2rem;
+
+}
+
+
+.reservation-left {
+    color: rgb(219, 215, 215);
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+    background-color: rgba(0,0,0,.4);
+}
+.reservation-left h3 {
+    font-size: 2.5rem;
+    padding: 20px 20px;
+}
+
+.reservation-left p {
+    font-size: 1.2rem;
+    padding: 20px 20px;
+}
+
+.reservation-right {
+    padding:20px 20px;
+    color: rgb(219, 215, 215);
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+    background-color: rgba(0,0,0,.4);
+}
+
+.reservation-right h3 {
+    font-size: 2.5rem;
+    padding: 20px 20px;
+}
