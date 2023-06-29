@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <div className='header-left-container'>
           <div className='header-left'> 
-          <h1>Little Lemon</h1>
+          <h1 data-testid="test-1">Little Lemon</h1>
           <h2>Chicago</h2>
           <p>We are a family owned, Mediterranean restaurant,<br/> focused on traditional <br/>recipes served with a modern <br/> twist.</p>
           <button className='header-reserve-button'>Reserve a table</button>

@@ -4,9 +4,7 @@ const SpecialsCard = (props) => {
     const {img,price,title, description} = props.data
 
 
-    useEffect(()=>{
-        console.log(img)
-    })
+   
   return (
         <div className='card'>
             <div className='image-container'>

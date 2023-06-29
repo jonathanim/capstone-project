@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState} from 'react'
 import "./ReservationForm.css"
 const ReservationForm = () => {
@@ -28,6 +29,7 @@ const ReservationForm = () => {
         if (formData.email === "") {
             err.email = "* Email required!" 
         }else{
+
             let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
             if(!regex.test(formData.email)) {
                 err.email = "Email not valid!"
