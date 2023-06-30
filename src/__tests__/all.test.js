@@ -1,9 +1,11 @@
 
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import React from 'react'
 import { BrowserRouter } from "react-router-dom";
 import App from "../App";
 import Header from "../components/Header";
+
+import ReservationForm from "../components/ReservationForm";
 
 
 describe("testing all components", ()=>{
@@ -14,12 +16,17 @@ describe("testing all components", ()=>{
 })
     test('should render Header Component', () => {
     render(<Header/>)
-    const h1 = screen.getByTestId('test-1')
-    
-    expect(h1).toBeInTheDocument()
-    expect(h1).toHaveTextContent('Little Lemon')
+    const headingElement = screen.getByText(/little lemon/i)
+    expect(headingElement).toBeInTheDocument()
+    expect(headingElement).toHaveTextContent('Little Lemon')
+   
 })
 
-
+test('should render Reservation Form Component', () => {
+    render(<ReservationForm/>)
+    const formElement =  screen.getByRole("form");
+    expect(formElement).toBeInTheDocument();
+    const buttonElement = screen.getByText(/reserve today/i)
+})
 
 })

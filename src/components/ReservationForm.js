@@ -70,7 +70,7 @@ const ReservationForm = () => {
 
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <form onSubmit={onSubmitHandler} aria-label="form">
     <fieldset>
         <div className="field">
             <label htmlFor="name">Full Name</label>
