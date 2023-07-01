@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './SpecialsCard.css'
 const SpecialsCard = (props) => {
     const {img,price,title, description} = props.data
