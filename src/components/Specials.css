@@ -30,9 +30,10 @@
 
 .special-card-container {
     display: grid;
-    grid-template-columns: 31% 31% 31%;
-    gap: 35px;
-    margin: 2rem;
+    grid-template-columns: repeat(3, 30%);
+    gap: 2rem;
+    justify-content:space-evenly;
+    margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 800px) {

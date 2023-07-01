@@ -1,5 +1,5 @@
 
-import { render, screen, cleanup, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import React from 'react'
 import { BrowserRouter } from "react-router-dom";
 import App from "../App";
@@ -27,6 +27,7 @@ test('should render Reservation Form Component', () => {
     const formElement =  screen.getByRole("form");
     expect(formElement).toBeInTheDocument();
     const buttonElement = screen.getByText(/reserve today/i)
+    expect(buttonElement).toBeInTheDocument()
 })
 
 })
