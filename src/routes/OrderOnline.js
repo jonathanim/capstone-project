@@ -3,7 +3,7 @@ import React from 'react'
 const OrderOnline = () => {
   return (
     <div>
-      order online
+        <h1 style={{color: "red", textAlign:"center"}} >Under construction</h1>
     </div>
   )
 }

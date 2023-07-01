@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import './LoginForm.css'
 
 const LoginForm = () => {
 
@@ -48,7 +48,7 @@ const LoginForm = () => {
 
   return (
     <div className='form-container'>
-    <form onSubmit={onSubmitHandler} aria-label="form">
+    <form onSubmit={onSubmitHandler} aria-label="form" >
       <div className='field'>
         <label htmlFor='email'>Email</label>
         <input 
